@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 public class countingInversions
 {
    public static void main(String[] args){
-       //int[] array = new int[] {1,3};
        int[] array = readFromFile("unsortedArray.txt");
        long startTime = System.currentTimeMillis();
        int countBrute = countingInversionsBrute(array);
@@ -14,6 +13,8 @@ public class countingInversions
        System.out.format("Brute force found %d inversions in this\n" +
                           " array of length %d in %d milliseconds",
                           countBrute,array.length,duration);
+
+
     }
     public static int countingInversionsBrute(int[] array)
     {
